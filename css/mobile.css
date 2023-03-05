@@ -1,0 +1,32 @@
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 426px;
+  }
+  /* ~~~ footer ~~~ */
+  .mob-menu-tel {
+    font-size: 36px;
+  }
+  /* ~~~ mob-menu ~~~ */
+  .mob-menu-social-list {
+    gap: 56px;
+  }
+  /* ~~~ features ~~~ */
+  .features-subtitle {
+    font-size: 36px;
+  }
+
+  .features-text {
+    font-size: 16px;
+  }
+
+  /* ~~~ doing ~~~ */
+  /* ~~~~~~~~~~~~~~~~~ team ~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+  /* ~~~ portfolio-list ~~~ */
+  .list-subtitle {
+    font-size: 20px;
+  }
+  .list-text {
+    font-size: 16px;
+  }
+}
