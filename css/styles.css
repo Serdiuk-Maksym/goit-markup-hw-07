@@ -72,6 +72,7 @@ img {
 .header {
   background: #ffffff;
   border-bottom: 1px solid #e7e9fc;
+  height: 70px;
 }
 
 .main-nav {
@@ -112,18 +113,21 @@ img {
 .header > .container {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 .menu-open {
-  fill: var(--titl-color);
+  border: none;
+  background-color: transparent;
 }
 .menu-open-icon {
-  fill: var(--titl-color);
+  stroke: var(--titl-color);
 }
 
 /* ~~~~~~~~~~~~~~~~~ mob-menu ~~~~~~~~~~~~~~~~~~~ */
 
 .mob-menu {
   position: fixed;
+  z-index: 1;
   top: 0;
   width: 100%;
   height: 100%;
@@ -133,7 +137,7 @@ img {
 
   opacity: 1;
 
-  transition-property: scale, opacity;
+  transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -143,7 +147,6 @@ img {
 }
 
 .mob-menu.is-hidden {
-  transform: scale(1.1);
   pointer-events: none;
   opacity: 0;
 }
@@ -183,6 +186,9 @@ img {
 .mob-menu-item {
   list-style: none;
 }
+.mob-menu-item > .current {
+  color: var(--pressed-state-color);
+}
 .mob-menu-link {
   font-weight: 700;
   font-size: 36px;
@@ -212,7 +218,7 @@ img {
   font-size: 28px;
   line-height: 1.11;
   text-transform: capitalize;
-  color: var(--text-color);
+  color: var(--pressed-state-color);
   text-decoration: none;
 }
 
@@ -844,7 +850,12 @@ img {
 
 .modal {
   position: absolute;
-  padding-top: 96px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 290px;
+  margin: 32px 0;
+  padding: 24px;
 
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -889,11 +900,11 @@ img {
 }
 
 .modal-title {
-  margin-top: 48px;
+  margin-top: 36px;
   margin-bottom: 14px;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 10px;
+  line-height: 1.1;
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--titl-color);
@@ -907,8 +918,8 @@ img {
   display: inline-block;
   margin-bottom: 4px;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.33;
+  font-size: 10px;
+  line-height: 1.1;
   letter-spacing: 0.04em;
   color: var(--subtle-text-color);
 }
@@ -916,12 +927,12 @@ img {
 .input-wrap {
   position: relative;
   width: 100%;
-  height: 40px;
+  height: 30px;
 }
 
 .modal-input {
   width: 100%;
-  height: 40px;
+  height: 30px;
   padding: 0;
   padding-left: 38px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -956,13 +967,13 @@ img {
 .modal-message {
   display: block;
   width: 100%;
-  height: 120px;
+  height: 90px;
   padding: 8px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.33;
+  font-size: 10px;
+  line-height: 1.1;
   letter-spacing: 0.04em;
   color: var(--subtle-text-color);
   background: #fcfcfc;
@@ -991,8 +1002,8 @@ img {
   text-align: center;
 
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.33;
+  font-size: 8px;
+  line-height: 1.1;
   letter-spacing: 0.04em;
   color: #757575;
 }
@@ -1022,8 +1033,8 @@ img {
 .check-text-span {
   margin-left: 5px;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 1.33;
+  font-size: 8px;
+  line-height: 1.1;
   letter-spacing: 0.04em;
   color: var(--primary-brand-color);
 }
@@ -1052,8 +1063,8 @@ img {
 .submit-text {
   width: 105px;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 10px;
+  line-height: 1.1;
   letter-spacing: 0.04em;
   color: var(--background-color);
 }

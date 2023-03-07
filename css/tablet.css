@@ -3,11 +3,15 @@
     max-width: 582px;
   }
   /* ~~~ header ~~~ */
+  .header > .container {
+    max-width: 736px;
+    padding: 0;
+  }
   .header-list {
     display: flex;
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 76px;
+    margin-left: 120px;
     gap: 40px;
   }
 
@@ -55,7 +59,9 @@
 
   .header-address {
     display: flex;
-    margin-left: auto;
+    flex-direction: column;
+    gap: 4px;
+    align-items: baseline;
   }
 
   .header-address > .list {
@@ -64,9 +70,9 @@
   }
 
   .header-address > .item {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
     list-style: none;
   }
 
@@ -224,4 +230,10 @@
 .subscribe-btn {
   margin-top: 0;
   margin-left: 24px;
+}
+
+/* ~~~ modal ~~~ */
+.modal {
+  width: 408px;
+  margin-top: 96px;
 }
