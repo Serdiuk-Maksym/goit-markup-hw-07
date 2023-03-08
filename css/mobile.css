@@ -29,48 +29,48 @@
   .list-text {
     font-size: 16px;
   }
-}
 
-/* ~~~ footer ~~~ */
-.subscribe-mail {
-  padding: 0;
-}
+  /* ~~~ footer ~~~ */
+  .subscribe-mail {
+    padding: 0;
+  }
 
-/* ~~~ modal ~~~ */
-.modal {
-  width: 396px;
-  margin: 0;
-}
-.modal-title {
-  margin-top: 48px;
-  margin-bottom: 16px;
-  font-size: 16px;
-  line-height: 1.5;
-}
-.input-text {
-  font-size: 12px;
-  line-height: 1.33;
-}
-.input-wrap {
-  height: 40px;
-}
-.modal-input {
-  height: 40px;
-}
-.modal-message {
-  height: 120px;
-  font-size: 12px;
-  line-height: 1.33;
-}
-.check-text {
-  font-size: 12px;
-  line-height: 1.33;
-}
-.check-text-span {
-  font-size: 12px;
-  line-height: 1.33;
-}
-.submit-text {
-  font-size: 16px;
-  line-height: 1.5;
+  /* ~~~ modal ~~~ */
+  .modal {
+    width: 396px;
+    margin: 0;
+  }
+  .modal-title {
+    margin-top: 48px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .input-text {
+    font-size: 12px;
+    line-height: 1.33;
+  }
+  .input-wrap {
+    height: 40px;
+  }
+  .modal-input {
+    height: 40px;
+  }
+  .modal-message {
+    height: 120px;
+    font-size: 12px;
+    line-height: 1.33;
+  }
+  .check-text {
+    font-size: 12px;
+    line-height: 1.33;
+  }
+  .check-text-span {
+    font-size: 12px;
+    line-height: 1.33;
+  }
+  .submit-text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
